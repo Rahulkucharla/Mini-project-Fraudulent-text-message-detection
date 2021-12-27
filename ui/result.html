@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <title>PREDICTION OF YOUR MESSAGE</title>
+    <CENTER>
+        <body style="background-color: antiquewhite;">
+            {%if data=='spam'%}
+            <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 
+            'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: red;">SPAM MESSAGE</h1>
+            <br>
+            <img src="spam.jpg" width="300" height="300"/>
+            {% elif data=='ham' %}
+            <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: rebeccapurple;">SAFE MESSAGE</h1>
+            <br>
+            <img src="safe.jpg" width="300" height="300"/>
+            {% endif %}
+            <br><br>
+            <a href='/'>Click here to go to home page</a>
+        </body>
+    </CENTER>
+</html>
